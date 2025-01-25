@@ -8,7 +8,7 @@ describe('template spec', () => {
 
   it('checking the rarity sorting', () => {
     let rarity4count = 42
-    let rarity5count = 53
+    let rarity5count = 55
 
     cy.get('.filters-item').eq(0).click()
     cy.get('.rarity-4')
@@ -57,27 +57,27 @@ describe('template spec', () => {
         cy.get('.search-input').clear()
     };
 
-    searchAndCheck('a', 56)
+    searchAndCheck('a', 58)
     searchAndCheck('b', 7)
-    searchAndCheck('c', 17)
+    searchAndCheck('c', 18)
     searchAndCheck('d', 14)
     searchAndCheck('e', 42)
     searchAndCheck('f', 5)
     searchAndCheck('g', 12)
     searchAndCheck('h', 26)
-    searchAndCheck('i', 50)
+    searchAndCheck('i', 52)
     searchAndCheck('j', 2)
-    searchAndCheck('k', 13)
-    searchAndCheck('l', 31)
-    searchAndCheck('m', 13)
+    searchAndCheck('k', 14)
+    searchAndCheck('l', 32)
+    searchAndCheck('m', 14)
     searchAndCheck('n', 45)
     searchAndCheck('o', 40)
     searchAndCheck('q', 3)
     searchAndCheck('r', 27)
     searchAndCheck('s', 13)
-    searchAndCheck('t', 19)
-    searchAndCheck('u', 23)
-    searchAndCheck('v', 10)
+    searchAndCheck('t', 20)
+    searchAndCheck('u', 24)
+    searchAndCheck('v', 11)
     searchAndCheck('w', 3)
     searchAndCheck('x', 6)
     searchAndCheck('y', 22)
