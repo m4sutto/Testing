@@ -10,10 +10,19 @@ Docker — это платформа с открытым исходным код
 4. Dockerfile  
 Dockerfile — это текстовый файл, содержащий инструкции для создания образа. В нем описывается, какой базовый образ использовать, какие команды выполнить для настройки среды, какие файлы скопировать и как запускать приложение. Пример Dockerfile:  
 ```
-FROM ubuntu:20.04  
-RUN apt-get update && apt-get install -y python3  
-COPY . /app  
-WORKDIR /app  
+# Базовый образ
+FROM ubuntu:20.04
+
+# Установка зависимостей
+RUN apt-get update && apt-get install -y python3
+
+# Копирование файлов приложения
+COPY . /app
+
+# Рабочая директория
+WORKDIR /app
+
+# Команда для запуска приложения
 CMD ["python3", "app.py"]
 ```
 5. Docker Hub  
